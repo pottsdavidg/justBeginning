@@ -1,0 +1,42 @@
+<!DOCTYPE=html>
+<html>
+
+<head>
+
+	<title>Tic Tac Toe</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="tictac.css">
+
+</head>
+
+<body>
+
+	<header class="display">
+		<div id="player-one-points"></div>
+		<div id="player-turn"></div>
+		<div id="player-two-points"></div>
+	</header>
+
+	<main class="game-board">
+		<div class="board-space" onclick="playerMove(0,0)"></div>
+		<div class="board-space" onclick="playerMove(1,0)"></div>
+		<div class="board-space" onclick="playerMove(2,0)"></div>
+		<div class="board-space" onclick="playerMove(0,1)"></div>
+		<div class="board-space" onclick="playerMove(1,1)"></div>
+		<div class="board-space" onclick="playerMove(2,1)"></div>
+		<div class="board-space" onclick="playerMove(0,2)"></div>
+		<div class="board-space" onclick="playerMove(1,2)"></div>
+		<div class="board-space" onclick="playerMove(2,2)"></div>
+	</main>
+
+	<footer class="game-message">
+		<div id="new-game" onclick="resetWindow(1)">New Game</div>
+		<div id="script-output"></div>
+		<div id="new-round" onclick="resetWindow(0)">Restart Round</div>
+	<footer>
+
+</body>
+
+<script type="text/javascript" src="tictac.js"></script>
+
+</html>
