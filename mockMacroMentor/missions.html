@@ -1,0 +1,288 @@
+<!DOCTYPE=html>
+<html>
+
+<head>
+
+	<title>Macro-Mentor Web App</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="logo.png">
+
+</head>
+
+<body>
+
+	<header>
+		
+		<div class="header">
+
+			<div class="header-div">
+
+				<div class="text-div-left">
+					<img src="logo.png">
+				</div>
+
+			</div>
+
+			<div class="header-div">
+
+				<div class="text-div-right">
+					<span class="header-text">The Geeky Gamer</span><br/>
+					<span class="header-text" style="color: #F26735;">NA</span>
+				</div>
+
+			</div>
+
+			<div class="nav-div">
+
+				<div class="link-container">
+				
+					<div class="link-bar"></div>
+
+					<div class="nav-link">
+						<a href="home.html">Home</a>
+					</div>
+
+					<div class="link-bar"></div>
+
+					<div class="nav-link">
+						<a href="missions.html">Missions</a>
+					</div>
+
+					<div class="link-bar"></div>
+				
+					<div class="nav-link">
+						<a href="gamelogs.html">Logged Games</a>
+					</div>
+
+					<div class="link-bar"></div>
+				
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>
+
+	<main>
+		
+		<div class="content-main">
+
+			<div class="content-container">
+
+				<div class="headline">
+
+					<div>
+						<span class="header-text">Laning: Offence vs Defence</span>
+					</div>
+
+					<div class="select-mission">
+						<span style="font-size: 15px; color: #fff;">PROMOTE TO:</span>
+						<button type="button" onclick="updateMission('Offence vs Defence', 'main')">MAIN MISSION</button>
+						<button type="button" onclick="updateMission('Offence vs Defence', 'side')">SIDE MISSION</button>
+					</div>
+
+				</div>
+
+				<div class="video-container">
+
+					<div class="mission-video-why">
+
+						<span class="header2-text">Why?</span>
+
+						<div class="iframe-container">
+							<iframe width="100%" height="300" src="https://www.youtube.com/embed/CzTaiE0DEK4" title="Mission Why Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+					</div>
+
+					<div class="mission-video-how">
+			
+						<span class="header2-text">How?</span>
+
+						<div class="iframe-container">
+							<iframe width="100%" height="300" src="https://www.youtube.com/embed/Jcq3eZQ8rHk" title="Mission How Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+				
+					</div>
+			
+				</div>
+
+				<div class="sub-container">
+
+					<span class="header2-text">How Do I Rate This Mission?</span><br><br>
+
+					<span class="body-text">
+						1-Star : You recognized offense and defense, but were very passive and avoided offense.
+					</span><br>
+					<span class="body-text">
+						2-Star : Used your defense and position to secure XP with farming attemped, but mostly missed.
+					</span><br>
+					<span class="body-text">
+						3-Star : You are recognizing offense and trading aggressively from time to time, but aren't "aggro".
+					</span><br>
+					<span class="body-text">
+						4-Star : Avoiding substantial HP loss on defense while trading (ranged champs are harder).
+					</span><br>
+					<span class="body-text">
+						5-Star : Maintaining around 7+ cs/min while being aware of offense vs defense. Great Job!
+					</span>
+
+				</div>
+			
+			</div>
+
+			<div class="content-container">
+
+				<div class="headline">
+
+					<div>
+						<span class="header-text">Laning: Minion Negotiation</span>
+					</div>
+
+					<div class="select-mission">
+						<span style="font-size: 15px; color: #fff;">PROMOTE TO:</span>
+						<button type="button" onclick="updateMission('Minion Negotiation', 'main')">MAIN MISSION</button>
+						<button type="button" onclick="updateMission('Minion Negotiation', 'side')">SIDE MISSION</button>
+					</div>
+
+				</div>
+
+				<div class="video-container">
+
+					<div class="mission-video-why">
+
+						<span class="header2-text">Why?</span>
+
+						<div class="iframe-container">
+							<iframe width="100%" height="300" src="https://www.youtube.com/embed/hGoF8DMokb8" title="Mission Why Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+					</div>
+
+					<div class="mission-video-how">
+			
+						<span class="header2-text">How?</span>
+
+						<div class="iframe-container">
+							<iframe width="100%" height="300" src="https://www.youtube.com/embed/XGvDX0EYVnU" title="Mission How Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+				
+					</div>
+			
+				</div>
+
+				<div class="sub-container">
+
+					<span class="header2-text">How Do I Rate This Mission?</span><br><br>
+
+					<span class="body-text">
+						1-Star : You are still very slow to respond to dying minions, and rarely punish opponents for getting CS.
+					</span><br>
+					<span class="body-text">
+						2-Star : Can occasionally connect a trade on minion death, but trades are sloppy and drag on.
+					</span><br>
+					<span class="body-text">
+						3-Star : Roughly 50% of the time you are on offense, and you are contesting minions.
+					</span><br>
+					<span class="body-text">
+						4-Star : Over 75% of the time you are on offense, and you are contesting minions.
+					</span><br>
+					<span class="body-text">
+						5-Star : You are constantly contesting minions, and trading favorably every time. Good Going!
+					</span>
+
+				</div>
+			
+			</div>
+
+			<div class="content-container">
+
+				<div class="headline">
+
+					<div>
+						<span class="header-text">Scuttle's Stepfather</span>
+					</div>
+
+					<div class="select-mission">
+						<span style="font-size: 15px; color: #fff;">PROMOTE TO:</span>
+						<button type="button" onclick="updateMission('Scuttles Stepfather', 'main')">MAIN MISSION</button>
+						<button type="button" onclick="updateMission('Scuttles Stepfather', 'side')">SIDE MISSION</button>
+					</div>
+
+				</div>
+
+				<div class="video-container">
+
+					<div class="mission-video-why">
+
+						<span class="header2-text">Why?</span>
+
+						<div class="iframe-container">
+							<iframe width="100%" height="300" src="https://www.youtube.com/embed/hZ7eGp6-ubU" title="Mission Why Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+					</div>
+
+					<div class="mission-video-how">
+			
+						<span class="header2-text">How?</span>
+
+						<div class="iframe-container">
+							<iframe width="100%" height="300" src="https://www.youtube.com/embed/75ZmH5C-AEk" title="Mission How Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+				
+					</div>
+			
+				</div>
+
+				<div class="sub-container">
+
+					<span class="header2-text">How Do I Rate This Mission?</span><br><br>
+
+					<span class="body-text">
+						1-Star : You know scuttle exists, but you forgot about it or didn't care. How could you?
+					</span><br>
+					<span class="body-text">
+						2-Star : You contest scuttle poorly, failing to manage your waves which results in a massive disadvantage.
+					</span><br>
+					<span class="body-text">
+						3-Star : You contested scuttle and had the opportunity to win a big early fight, but came up short.
+					</span><br>
+					<span class="body-text">
+						4-Star : You win the first scuttle and get a W for the team, but it wasn't clean.
+					</span><br>
+					<span class="body-text">
+						5-Star : You use pinglish to show a hunger to win scuttle, and you aggressively contest ALL the scuttles you can.
+					</span>
+
+				</div>
+			
+			</div>
+
+			<div id="current-missions" style="text-align: center;">
+				<span class="body-text">Selected Missions</span>
+				<div class="mission-label" style="text-align: left;">
+					<span class="body-text">MAIN:</span>
+					<span class="body-text" id="selected-main"></span>
+				</div>
+				<div class="mission-label" style="text-align: left;">
+					<span class="body-text">SIDE:</span>
+					<span class="body-text" id="selected-side"></span>
+				</div>
+			</div>
+		
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="version-float header-text" style="color: #F26735;">V 0.3.5</div>
+	</footer>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

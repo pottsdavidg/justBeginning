@@ -1,0 +1,1000 @@
+<!DOCTYPE=html>
+<html>
+
+<head>
+
+	<title>Macro-Mentor Web App</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="logo.png">
+
+</head>
+
+<body>
+
+	<div id="new-game-window">
+		<div id="foreground-window">
+			<form id="survey-form" method="POST" onSubmit="confirmPage" class="body-text">
+
+				<div class="form-box" id="grid-00">
+					<label id="dropdown-label" for="number">ROLE:</label>
+					<select id="dropdown" required>
+						<option selected value>TOP</option>
+						<option value>BOT</option>
+						<option value>MID</option>
+						<option value>SUP</option>
+						<option value>JNG</option>
+					</select>
+				</div>
+
+				<div class="form-box" id="grid-01">
+					<label id="name-label" for="name">Ranked:</label>
+					<input type="checkbox" id="ranked" name="ranked" value="ranked" required><br>
+					<label id="name-label" for="name">Victory:</label>
+					<input type="checkbox" id="victory" name="victory" value="victory" required>
+				</div>
+
+				<div class="form-box" id="grid-02">
+					<span>Rate and describe your main mission performance.</span>
+					<input type="range" id="myRange" value="90">
+					<br>
+					<textarea class="textbox" id="short-response" required>
+					</textarea>
+				</div>
+
+				<div class="form-box" id="grid-03">
+					<span>Rate and describe your side mission performance.</span>
+					<input type="range" id="myRange" value="90">
+					<br>
+					<textarea class="textbox" id="short-response" required>
+					</textarea>
+				</div>
+
+				<div class="form-box" id="grid-04">
+					<span>Key take-aways and general notes.</span><br>
+					<textarea class="textbox" id="short-response" required>
+					</textarea><br>
+					<button type="button" id="submit-form" onclick="newGameWindow()">SUBMIT</button>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<header>
+		
+		<div class="header">
+
+			<div class="header-div">
+
+				<div class="text-div-left">
+					<img src="logo.png">
+				</div>
+
+			</div>
+
+			<div class="header-div">
+
+				<div class="text-div-right">
+					<span class="header-text">The Geeky Gamer</span><br/>
+					<span class="header-text" style="color: #F26735;">NA</span>
+				</div>
+
+			</div>
+
+			<div class="nav-div">
+
+				<div class="link-container">
+				
+					<div class="link-bar"></div>
+
+					<div class="nav-link">
+						<a href="home.html">Home</a>
+					</div>
+
+					<div class="link-bar"></div>
+
+					<div class="nav-link">
+						<a href="missions.html">Missions</a>
+					</div>
+
+					<div class="link-bar"></div>
+				
+					<div class="nav-link">
+						<a href="gamelogs.html">Logged Games</a>
+					</div>
+
+					<div class="link-bar"></div>
+				
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>
+
+	<main>
+		
+		<div class="content-main">
+
+			<div class="content-container">
+
+				<div class="game-log-title">
+
+					<div>
+						<span class="body-text">OUTCOME</span>
+					</div>
+
+					<div>
+						<span class="body-text">CHAMPION</span>
+					</div>
+
+					<div>
+						<span class="body-text">MISSIONS</span>
+					</div>
+
+					<div>
+						<span class="body-text">RATING</span>
+					</div>
+
+					<div>
+						<span class="body-text">DETAILS</span>
+					</div>
+
+				</div>
+
+				<div class="game-log-container">
+
+					<div class="game-log">
+
+						<div class="log-column-one">
+							<span style="font-size: 40px; color: #0f0;">W</span>
+						</div>
+
+						<div class="log-column-two">
+							<img src="jhin.png">
+						</div>
+
+						<div class="log-column-three">
+							<span class="body-text">Laning: Offence vs Defence</span><br>
+							<span class="body-text">Scuttles Stepfather</span>
+						</div>
+
+						<div class="log-column-four">
+							<span class="body-text">4-Star</span><br>
+							<span class="body-text">5-Star</span>
+						</div>
+
+						<div class="log-column-five">
+							<button type="button" id="review-game">REVIEW</button>
+						</div>
+
+					</div>
+
+					<div id="review-log-window">
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MAIN MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									I felt like this game went really well. I pressured my laner constantly throughout the game.
+									He couldn't step up to the wave without getting harrassed, I got ganked and backed off offence,
+									which led to my shitting a brick mid-game. I still need to work on reacting faster to when my
+									opponent makes a play.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">SIDE MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									One good thing that comes with pairing these two missions is, when I am doing well with my
+									offence/defence I can contest scuttle way easier. I won a lvl 3 fight and forced my laner to back,
+									this gave me time to ping the jungler to scuttle and we killed the enemy jg and took scuttle. Not
+									only did I make a play for myself, but gave the jg a lead as well. Great Game.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+							
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MATCH NOTES:</span>
+							</div>
+							
+							<div class="review-div">
+								<span class="body-text">
+									Some key take aways from this match have to be my late game decision making. I kept the pace from my early game
+									advantage. When focusing on being so decisive in lane it really opens up the ability to really
+									start forcing things to happen later in the game. All in all a GREAT GAME. Thank you Neace!
+								</span>
+							</div>
+						
+						</div>
+						
+						<div class="review-grid-container review-violations">
+							
+							<span class="body-text vio-span" style="color: #F26735;">VIOLATIONS:</span>
+							<span class="body-text vio-span">Camera Lock</span>
+							<span class="body-text vio-span">Chatterbox</span>
+							<span class="body-text vio-span">Hand Leveler</span>
+
+						</div>
+
+					</div>
+				
+				</div>
+
+				<div class="game-log-container">
+
+					<div class="game-log">
+
+						<div class="log-column-one">
+							<span style="font-size: 40px; color: #f00;">L</span>
+						</div>
+
+						<div class="log-column-two">
+							<img src="jhin.png">
+						</div>
+
+						<div class="log-column-three">
+							<span class="body-text">Laning: Offence vs Defence</span><br>
+							<span class="body-text">Scuttles Stepfather</span>
+						</div>
+
+						<div class="log-column-four">
+							<span class="body-text">4-Star</span><br>
+							<span class="body-text">3-Star</span>
+						</div>
+
+						<div class="log-column-five">
+							<button type="button" id="review-game">REVIEW</button>
+						</div>
+
+					</div>
+
+					<div id="review-log-window">
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MAIN MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									I felt like this game went really well. I pressured my laner constantly throughout the game.
+									He couldn't step up to the wave without getting harrassed, I got ganked and backed off offence,
+									which led to my shitting a brick mid-game. I still need to work on reacting faster to when my
+									opponent makes a play.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">SIDE MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									One good thing that comes with pairing these two missions is, when I am doing well with my
+									offence/defence I can contest scuttle way easier. I won a lvl 3 fight and forced my laner to back,
+									this gave me time to ping the jungler to scuttle and we killed the enemy jg and took scuttle. Not
+									only did I make a play for myself, but gave the jg a lead as well. Great Game.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+							
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MATCH NOTES:</span>
+							</div>
+							
+							<div class="review-div">
+								<span class="body-text">
+									Some key take aways from this match have to be my late game decision making. I kept the pace from my early game
+									advantage. When focusing on being so decisive in lane it really opens up the ability to really
+									start forcing things to happen later in the game. All in all a GREAT GAME. Thank you Neace!
+								</span>
+							</div>
+						
+						</div>
+						
+						<div class="review-grid-container review-violations">
+							
+							<span class="body-text vio-span" style="color: #F26735;">VIOLATIONS:</span>
+							<span class="body-text vio-span">Camera Lock</span>
+							<span class="body-text vio-span">Chatterbox</span>
+							<span class="body-text vio-span">Hand Leveler</span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="game-log-container">
+					
+					<div class="game-log">
+
+						<div class="log-column-one">
+							<span style="font-size: 40px; color: #0f0;">W</span>
+						</div>
+
+						<div class="log-column-two">
+							<img src="jhin.png">
+						</div>
+
+						<div class="log-column-three">
+							<span class="body-text">Laning: Offence vs Defence</span><br>
+							<span class="body-text">Scuttles Stepfather</span>
+						</div>
+
+						<div class="log-column-four">
+							<span class="body-text">3-Star</span><br>
+							<span class="body-text">2-Star</span>
+						</div>
+
+						<div class="log-column-five">
+							<button type="button" id="review-game">REVIEW</button>
+						</div>
+
+					</div>
+
+					<div id="review-log-window">
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MAIN MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									I felt like this game went really well. I pressured my laner constantly throughout the game.
+									He couldn't step up to the wave without getting harrassed, I got ganked and backed off offence,
+									which led to my shitting a brick mid-game. I still need to work on reacting faster to when my
+									opponent makes a play.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">SIDE MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									One good thing that comes with pairing these two missions is, when I am doing well with my
+									offence/defence I can contest scuttle way easier. I won a lvl 3 fight and forced my laner to back,
+									this gave me time to ping the jungler to scuttle and we killed the enemy jg and took scuttle. Not
+									only did I make a play for myself, but gave the jg a lead as well. Great Game.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+							
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MATCH NOTES:</span>
+							</div>
+							
+							<div class="review-div">
+								<span class="body-text">
+									Some key take aways from this match have to be my late game decision making. I kept the pace from my early game
+									advantage. When focusing on being so decisive in lane it really opens up the ability to really
+									start forcing things to happen later in the game. All in all a GREAT GAME. Thank you Neace!
+								</span>
+							</div>
+						
+						</div>
+						
+						<div class="review-grid-container review-violations">
+							
+							<span class="body-text vio-span" style="color: #F26735;">VIOLATIONS:</span>
+							<span class="body-text vio-span">Camera Lock</span>
+							<span class="body-text vio-span">Chatterbox</span>
+							<span class="body-text vio-span">Hand Leveler</span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="game-log-container">
+					
+					<div class="game-log">
+
+						<div class="log-column-one">
+							<span style="font-size: 40px; color: #0f0;">W</span>
+						</div>
+
+						<div class="log-column-two">
+							<img src="jhin.png">
+						</div>
+
+						<div class="log-column-three">
+							<span class="body-text">Laning: Offence vs Defence</span><br>
+							<span class="body-text">Scuttles Stepfather</span>
+						</div>
+
+						<div class="log-column-four">
+							<span class="body-text">3-Star</span><br>
+							<span class="body-text">2-Star</span>
+						</div>
+
+						<div class="log-column-five">
+							<button type="button" id="review-game">REVIEW</button>
+						</div>
+
+					</div>
+
+					<div id="review-log-window">
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MAIN MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									I felt like this game went really well. I pressured my laner constantly throughout the game.
+									He couldn't step up to the wave without getting harrassed, I got ganked and backed off offence,
+									which led to my shitting a brick mid-game. I still need to work on reacting faster to when my
+									opponent makes a play.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">SIDE MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									One good thing that comes with pairing these two missions is, when I am doing well with my
+									offence/defence I can contest scuttle way easier. I won a lvl 3 fight and forced my laner to back,
+									this gave me time to ping the jungler to scuttle and we killed the enemy jg and took scuttle. Not
+									only did I make a play for myself, but gave the jg a lead as well. Great Game.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+							
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MATCH NOTES:</span>
+							</div>
+							
+							<div class="review-div">
+								<span class="body-text">
+									Some key take aways from this match have to be my late game decision making. I kept the pace from my early game
+									advantage. When focusing on being so decisive in lane it really opens up the ability to really
+									start forcing things to happen later in the game. All in all a GREAT GAME. Thank you Neace!
+								</span>
+							</div>
+						
+						</div>
+						
+						<div class="review-grid-container review-violations">
+							
+							<span class="body-text vio-span" style="color: #F26735;">VIOLATIONS:</span>
+							<span class="body-text vio-span">Camera Lock</span>
+							<span class="body-text vio-span">Chatterbox</span>
+							<span class="body-text vio-span">Hand Leveler</span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="game-log-container">
+					
+					<div class="game-log">
+
+						<div class="log-column-one">
+							<span style="font-size: 40px; color: #0f0;">W</span>
+						</div>
+
+						<div class="log-column-two">
+							<img src="jhin.png">
+						</div>
+
+						<div class="log-column-three">
+							<span class="body-text">Laning: Offence vs Defence</span><br>
+							<span class="body-text">Scuttles Stepfather</span>
+						</div>
+
+						<div class="log-column-four">
+							<span class="body-text">3-Star</span><br>
+							<span class="body-text">2-Star</span>
+						</div>
+
+						<div class="log-column-five">
+							<button type="button" id="review-game">REVIEW</button>
+						</div>
+
+					</div>
+
+					<div id="review-log-window">
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MAIN MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									I felt like this game went really well. I pressured my laner constantly throughout the game.
+									He couldn't step up to the wave without getting harrassed, I got ganked and backed off offence,
+									which led to my shitting a brick mid-game. I still need to work on reacting faster to when my
+									opponent makes a play.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">SIDE MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									One good thing that comes with pairing these two missions is, when I am doing well with my
+									offence/defence I can contest scuttle way easier. I won a lvl 3 fight and forced my laner to back,
+									this gave me time to ping the jungler to scuttle and we killed the enemy jg and took scuttle. Not
+									only did I make a play for myself, but gave the jg a lead as well. Great Game.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+							
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MATCH NOTES:</span>
+							</div>
+							
+							<div class="review-div">
+								<span class="body-text">
+									Some key take aways from this match have to be my late game decision making. I kept the pace from my early game
+									advantage. When focusing on being so decisive in lane it really opens up the ability to really
+									start forcing things to happen later in the game. All in all a GREAT GAME. Thank you Neace!
+								</span>
+							</div>
+						
+						</div>
+						
+						<div class="review-grid-container review-violations">
+							
+							<span class="body-text vio-span" style="color: #F26735;">VIOLATIONS:</span>
+							<span class="body-text vio-span">Camera Lock</span>
+							<span class="body-text vio-span">Chatterbox</span>
+							<span class="body-text vio-span">Hand Leveler</span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="game-log-container">
+					
+					<div class="game-log">
+
+						<div class="log-column-one">
+							<span style="font-size: 40px; color: #0f0;">W</span>
+						</div>
+
+						<div class="log-column-two">
+							<img src="jhin.png">
+						</div>
+
+						<div class="log-column-three">
+							<span class="body-text">Laning: Offence vs Defence</span><br>
+							<span class="body-text">Scuttles Stepfather</span>
+						</div>
+
+						<div class="log-column-four">
+							<span class="body-text">3-Star</span><br>
+							<span class="body-text">2-Star</span>
+						</div>
+
+						<div class="log-column-five">
+							<button type="button" id="review-game">REVIEW</button>
+						</div>
+
+					</div>
+
+					<div id="review-log-window">
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MAIN MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									I felt like this game went really well. I pressured my laner constantly throughout the game.
+									He couldn't step up to the wave without getting harrassed, I got ganked and backed off offence,
+									which led to my shitting a brick mid-game. I still need to work on reacting faster to when my
+									opponent makes a play.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">SIDE MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									One good thing that comes with pairing these two missions is, when I am doing well with my
+									offence/defence I can contest scuttle way easier. I won a lvl 3 fight and forced my laner to back,
+									this gave me time to ping the jungler to scuttle and we killed the enemy jg and took scuttle. Not
+									only did I make a play for myself, but gave the jg a lead as well. Great Game.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+							
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MATCH NOTES:</span>
+							</div>
+							
+							<div class="review-div">
+								<span class="body-text">
+									Some key take aways from this match have to be my late game decision making. I kept the pace from my early game
+									advantage. When focusing on being so decisive in lane it really opens up the ability to really
+									start forcing things to happen later in the game. All in all a GREAT GAME. Thank you Neace!
+								</span>
+							</div>
+						
+						</div>
+						
+						<div class="review-grid-container review-violations">
+							
+							<span class="body-text vio-span" style="color: #F26735;">VIOLATIONS:</span>
+							<span class="body-text vio-span">Camera Lock</span>
+							<span class="body-text vio-span">Chatterbox</span>
+							<span class="body-text vio-span">Hand Leveler</span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="game-log-container">
+
+					<div class="game-log">
+
+						<div class="log-column-one">
+							<span style="font-size: 40px; color: #f00;">L</span>
+						</div>
+
+						<div class="log-column-two">
+							<img src="jhin.png">
+						</div>
+
+						<div class="log-column-three">
+							<span class="body-text">Laning: Offence vs Defence</span><br>
+							<span class="body-text">Scuttles Stepfather</span>
+						</div>
+
+						<div class="log-column-four">
+							<span class="body-text">4-Star</span><br>
+							<span class="body-text">3-Star</span>
+						</div>
+
+						<div class="log-column-five">
+							<button type="button" id="review-game">REVIEW</button>
+						</div>
+
+					</div>
+
+					<div id="review-log-window">
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MAIN MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									I felt like this game went really well. I pressured my laner constantly throughout the game.
+									He couldn't step up to the wave without getting harrassed, I got ganked and backed off offence,
+									which led to my shitting a brick mid-game. I still need to work on reacting faster to when my
+									opponent makes a play.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">SIDE MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									One good thing that comes with pairing these two missions is, when I am doing well with my
+									offence/defence I can contest scuttle way easier. I won a lvl 3 fight and forced my laner to back,
+									this gave me time to ping the jungler to scuttle and we killed the enemy jg and took scuttle. Not
+									only did I make a play for myself, but gave the jg a lead as well. Great Game.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+							
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MATCH NOTES:</span>
+							</div>
+							
+							<div class="review-div">
+								<span class="body-text">
+									Some key take aways from this match have to be my late game decision making. I kept the pace from my early game
+									advantage. When focusing on being so decisive in lane it really opens up the ability to really
+									start forcing things to happen later in the game. All in all a GREAT GAME. Thank you Neace!
+								</span>
+							</div>
+						
+						</div>
+						
+						<div class="review-grid-container review-violations">
+							
+							<span class="body-text vio-span" style="color: #F26735;">VIOLATIONS:</span>
+							<span class="body-text vio-span">Camera Lock</span>
+							<span class="body-text vio-span">Chatterbox</span>
+							<span class="body-text vio-span">Hand Leveler</span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="game-log-container">
+
+					<div class="game-log">
+
+						<div class="log-column-one">
+							<span style="font-size: 40px; color: #f00;">L</span>
+						</div>
+
+						<div class="log-column-two">
+							<img src="jhin.png">
+						</div>
+
+						<div class="log-column-three">
+							<span class="body-text">Laning: Offence vs Defence</span><br>
+							<span class="body-text">Scuttles Stepfather</span>
+						</div>
+
+						<div class="log-column-four">
+							<span class="body-text">4-Star</span><br>
+							<span class="body-text">3-Star</span>
+						</div>
+
+						<div class="log-column-five">
+							<button type="button" id="review-game">REVIEW</button>
+						</div>
+
+					</div>
+
+					<div id="review-log-window">
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MAIN MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									I felt like this game went really well. I pressured my laner constantly throughout the game.
+									He couldn't step up to the wave without getting harrassed, I got ganked and backed off offence,
+									which led to my shitting a brick mid-game. I still need to work on reacting faster to when my
+									opponent makes a play.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">SIDE MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									One good thing that comes with pairing these two missions is, when I am doing well with my
+									offence/defence I can contest scuttle way easier. I won a lvl 3 fight and forced my laner to back,
+									this gave me time to ping the jungler to scuttle and we killed the enemy jg and took scuttle. Not
+									only did I make a play for myself, but gave the jg a lead as well. Great Game.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+							
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MATCH NOTES:</span>
+							</div>
+							
+							<div class="review-div">
+								<span class="body-text">
+									Some key take aways from this match have to be my late game decision making. I kept the pace from my early game
+									advantage. When focusing on being so decisive in lane it really opens up the ability to really
+									start forcing things to happen later in the game. All in all a GREAT GAME. Thank you Neace!
+								</span>
+							</div>
+						
+						</div>
+						
+						<div class="review-grid-container review-violations">
+							
+							<span class="body-text vio-span" style="color: #F26735;">VIOLATIONS:</span>
+							<span class="body-text vio-span">Camera Lock</span>
+							<span class="body-text vio-span">Chatterbox</span>
+							<span class="body-text vio-span">Hand Leveler</span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="game-log-container">
+
+					<div class="game-log">
+
+						<div class="log-column-one">
+							<span style="font-size: 40px; color: #f00;">L</span>
+						</div>
+
+						<div class="log-column-two">
+							<img src="jhin.png">
+						</div>
+
+						<div class="log-column-three">
+							<span class="body-text">Laning: Offence vs Defence</span><br>
+							<span class="body-text">Scuttles Stepfather</span>
+						</div>
+
+						<div class="log-column-four">
+							<span class="body-text">4-Star</span><br>
+							<span class="body-text">3-Star</span>
+						</div>
+
+						<div class="log-column-five">
+							<button type="button" id="review-game">REVIEW</button>
+						</div>
+
+					</div>
+
+					<div id="review-log-window">
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MAIN MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									I felt like this game went really well. I pressured my laner constantly throughout the game.
+									He couldn't step up to the wave without getting harrassed, I got ganked and backed off offence,
+									which led to my shitting a brick mid-game. I still need to work on reacting faster to when my
+									opponent makes a play.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">SIDE MISSION:</span>
+							</div>
+
+							<div class="review-div">
+								<span class="body-text">
+									One good thing that comes with pairing these two missions is, when I am doing well with my
+									offence/defence I can contest scuttle way easier. I won a lvl 3 fight and forced my laner to back,
+									this gave me time to ping the jungler to scuttle and we killed the enemy jg and took scuttle. Not
+									only did I make a play for myself, but gave the jg a lead as well. Great Game.
+								</span>
+							</div>
+
+						</div>
+
+						<div class="review-grid-container">
+							
+							<div class="review-div" style="text-align: center;">
+								<span class="header-text">MATCH NOTES:</span>
+							</div>
+							
+							<div class="review-div">
+								<span class="body-text">
+									Some key take aways from this match have to be my late game decision making. I kept the pace from my early game
+									advantage. When focusing on being so decisive in lane it really opens up the ability to really
+									start forcing things to happen later in the game. All in all a GREAT GAME. Thank you Neace!
+								</span>
+							</div>
+						
+						</div>
+						
+						<div class="review-grid-container review-violations">
+							
+							<span class="body-text vio-span" style="color: #F26735;">VIOLATIONS:</span>
+							<span class="body-text vio-span">Camera Lock</span>
+							<span class="body-text vio-span">Chatterbox</span>
+							<span class="body-text vio-span">Hand Leveler</span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<button type="button" id="test-new-game">Test New Game</button>
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="version-float header-text" style="color: #F26735;">V 0.3.5</div>
+	</footer>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

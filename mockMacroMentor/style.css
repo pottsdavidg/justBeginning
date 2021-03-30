@@ -1,0 +1,396 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Bahnschrift;
+    background-image: url(background.png);
+}
+
+.text-div-left img {
+    text-align: left;
+    margin: 10px;
+    padding: 15px;
+    width: 10%;
+    height: auto;
+    min-width: 75px;
+    border-radius: 15px;
+    background: #ffffff30;
+    backdrop-filter: blur(5px);
+    box-shadow: 3px 3px 3px #00000080;
+}
+
+.text-div-right {
+    text-align: right;
+    margin: auto;
+    padding: 15px;
+    color: #fff;
+}
+
+.title-text {
+    font-size: 60px;
+    font-family: Roboto;
+    color: #fff;
+}
+
+.header-text {
+    font-size: 30px;
+    color: #fff;
+}
+
+.header2-text {
+    font-size: 22px;
+    color: #fff;
+}
+
+.body-text {
+    font-size: 18px;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background: #00000080;
+    backdrop-filter: blur(5px);
+}
+
+.header {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 50%);
+}
+
+.nav-div {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background: #ffffff80;
+    border-top: 3px solid #000;
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid #000;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+}
+
+.link-bar {
+    margin: auto 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #000000;
+}
+
+.nav-link {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    background: #ffffff20;
+}
+
+.nav-link a {
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.content-main {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 15% auto 15%;
+}
+
+.content-container {
+    grid-column: 2/3;
+    background: #ffffff80;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 5px 5px 5px #00000080;
+}
+
+.headline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-mission {
+    padding: 5px;
+    background: #00000030;
+    border-radius: 10px;
+}
+
+.select-mission button {
+    padding: 5px;
+    background: #F26735;
+    border: 0px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: Bahnschrift;
+    cursor: pointer;
+}
+
+.video-container {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
+.mission-video-how,
+.mission-video-why {
+    background: #00000030;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.iframe-container iframe {
+    border-radius: 10px;
+}
+
+.sub-container {
+    margin: 10px;
+    padding: 15px;
+    background: #00000050;
+    border-radius: 15px;
+}
+
+.game-log-title {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 15% 15% 40% 15% 15%;
+    margin: 10px;
+    padding: 10px;
+    background: #00000080;
+    border-radius: 15px;
+}
+
+.game-log {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 15% 15% 40% 15% 15%;
+    margin: 10px;
+    padding: 10px;
+    background: #00000080;
+    border-radius: 15px;
+}
+
+.log-column-one {
+    margin: auto 0px;
+}
+
+.log-column-two {
+    margin: auto 0px;
+}
+
+.log-column-two img {
+    width: 50px;
+    height: auto;
+}
+
+.log-column-three {
+    margin: auto 0px;
+}
+
+.log-column-four {
+    margin: auto 0px;
+}
+
+.log-column-five {
+    margin: auto 0px;
+}
+
+.log-column-five button {
+    border: 0px;
+    cursor: pointer;
+    background: #F26735;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Bahnschrift;
+}
+
+#review-log-window {
+    display: none;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    background: #00000040;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.review-grid-container {
+    background: #ffffff80;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.review-div {
+    background: #00000050;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.review-violations {
+    background: #ffffff80;
+    grid-column: 1/4;
+    border-radius: 15px;
+}
+
+.vio-span {
+    background: #00000050;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.version-float {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+#current-missions {
+    display: block;
+    position: fixed;
+    margin: 10px;
+    padding: 10px;
+    width: 12.5%;
+    background: #ffffff80;
+    border-radius: 15px;
+}
+
+.mission-label {
+    padding: 5px;
+    margin: 5px;
+    background: #00000080;
+    border-radius: 10px;
+}
+
+.date-container {
+    padding: 5px;
+    background: #00000030;
+    border-radius: 10px;
+}
+
+.image-container {
+display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
+.image-div,
+.description-div {
+    background: #00000030;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.image-div img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+#new-game-window {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    backdrop-filter: blur(5px);
+}
+
+#foreground-window {
+    margin :auto;
+    margin-top: 200px;
+    height: 720px;
+    width: 600px;
+    background: #000000f0;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+#survey-form {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 50% 50%;
+}
+
+.form-box {
+    margin: 10px;
+}
+
+.textbox {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin: 10px 0px;
+    font-family: Bahnschrift;
+    border-radius: 15px;
+    font-size: 18px;
+    background: #ffffffe0;
+}
+
+#grid-00 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+
+#grid-00 select {
+    width: 150px;
+    background: #ffffffe0;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: Bahnschrift;
+    font-size: 15px;
+}
+
+option {
+    background: #e0e0e0;
+}
+
+#grid-01 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+#grid-02 {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+#grid-03 {
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+
+#grid-04 {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    text-align: center;
+}
+
+#submit-form {
+    background: #F26735;
+    color: white;
+    font-family: Bahnschrift;
+    font-size: 12px;
+    border: 0px;
+    border-radius: 5px;
+}
